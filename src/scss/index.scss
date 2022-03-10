@@ -1,0 +1,143 @@
+/* =========== Start of reset styles =========== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+picture,
+div,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* remove animations for people who have turned animations off */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* =========== End of reset styles =========== */
+
+/* =========== Start variables =========== */
+
+$yellow: #fcb72b;
+$darknavy: #495567;
+$dimgrey: #939caa;
+$lightgrey: #e5ecf4;
+$snow: #f2f5f9;
+$lightyellow: #fff4df;
+
+$spacemono: "Space Mono";
+$lexenddeca: "Lexend Deca";
+
+/* =========== End variables =========== */
+
+/* =========== Start fonts =========== */
+
+/* space-mono-regular - latin */
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/space-mono-v10-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/space-mono-v10-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/space-mono-v10-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/space-mono-v10-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/space-mono-v10-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/space-mono-v10-latin-regular.svg#SpaceMono") format("svg"); /* Legacy iOS */
+}
+/* space-mono-700 - latin */
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/space-mono-v10-latin-700.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/space-mono-v10-latin-700.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/space-mono-v10-latin-700.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/space-mono-v10-latin-700.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/space-mono-v10-latin-700.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/space-mono-v10-latin-700.svg#SpaceMono") format("svg"); /* Legacy iOS */
+}
+
+/* lexend-deca-regular - latin */
+@font-face {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lexend-deca-v15-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/lexend-deca-v15-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lexend-deca-v15-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/lexend-deca-v15-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/lexend-deca-v15-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/lexend-deca-v15-latin-regular.svg#LexendDeca") format("svg"); /* Legacy iOS */
+}
+
+/* =========== End fonts =========== */
