@@ -1,0 +1,283 @@
+/* =========== Start Media Query =========== */
+@media only screen and (min-width: 768px) {
+  #header .hamburger {
+    display: none;
+  }
+
+  .nav-item .btn {
+    display: none;
+  }
+
+  .nav-btn {
+    display: inline-block;
+  }
+
+  #header .nav-list .nav-item {
+    position: initial;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    gap: 2.5rem;
+    background-color: transparent;
+  }
+
+  #header .logo {
+    transform: unset;
+  }
+
+  #header .nav-bar {
+    flex-direction: row;
+    width: 100%;
+    height: 6rem;
+    padding: 1.8rem 2.5rem;
+  }
+
+  .nav-list {
+    display: flex;
+  }
+
+  #header .nav-list .nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #header .nav-list .nav-item {
+    margin-top: 0rem;
+    padding: 0;
+  }
+
+  #header .nav-list .nav-item li a {
+    color: $dark;
+    transition: 0.6s cubic-bezier(0.37, 0, 0.63, 1);
+  }
+
+  #header .nav-list .nav-item li a:hover,
+  #header .nav-list .nav-item li a:focus {
+    color: $yellow;
+  }
+
+  .hero-desc .text h1 {
+    font-size: 3.5rem;
+    width: 575px;
+  }
+
+  .hero-desc .text p {
+    width: 575px;
+  }
+
+  .services {
+    padding: 6rem 5rem;
+  }
+
+  .service {
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  .service .line {
+    position: absolute;
+    height: 512px;
+    width: 20px;
+    background-color: $lightgrey;
+    z-index: -1;
+    top: -23rem;
+    left: 2.3rem;
+  }
+
+  .service .icon img {
+    width: 96px;
+  }
+
+  .service-text {
+    margin-left: 5rem;
+  }
+
+  .service-text h2,
+  .service-text p {
+    text-align: left;
+    width: 100%;
+  }
+
+  .signup h4 {
+    font-size: 3rem;
+    width: 450px;
+  }
+
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 2rem;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .social-icons {
+    margin: 0;
+  }
+}
+/* =========== End Media Query for Tablet =========== */
+
+/* =========== Start Media Query for Desktop =========== */
+@media only screen and (min-width: 920px) {
+  .outline {
+    position: absolute;
+    display: block;
+    height: 62px;
+    width: 62px;
+    border: 3px solid $lightgrey;
+    border-radius: 50%;
+    right: 4%;
+    bottom: 5%;
+  }
+
+  .outline-2 {
+    position: absolute;
+    display: block;
+    height: 62px;
+    width: 62px;
+    border: 3px solid $lightgrey;
+    border-radius: 50%;
+    right: 9%;
+    bottom: 5%;
+  }
+
+  .fill-3 {
+    position: absolute;
+    display: block;
+    height: 62px;
+    width: 62px;
+    background: $lightgrey;
+    border-radius: 50%;
+    right: -1%;
+    bottom: 5%;
+  }
+
+  .services {
+    display: flex;
+    padding: 8rem 2rem;
+    margin-top: 12rem;
+    position: relative;
+  }
+
+  .service {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .service .line {
+    position: absolute;
+    width: 500px;
+    height: 20px;
+    background-color: $snow;
+    top: -7.5rem;
+    left: -24rem;
+  }
+
+  .service-text p {
+    text-align: left;
+    max-width: 350px;
+    max-height: 100px;
+  }
+
+  .service .icon {
+    position: absolute;
+    left: 4.5rem;
+    bottom: 15rem;
+  }
+
+  .facility {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    padding: 0 4rem;
+  }
+
+  .facility h3 {
+    font-size: 3rem;
+    max-width: 500px;
+  }
+
+  .facility p {
+    max-width: 500px;
+  }
+
+  .item-one {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .item-three {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .images .image {
+    padding: 3rem 5rem;
+  }
+
+  .facility .images {
+    flex: 1;
+    max-width: 650px;
+  }
+
+  .facility .facility-text {
+    flex: 1;
+    max-width: 650px;
+    align-items: flex-start;
+  }
+
+  .item-one picture {
+    top: 46%;
+    left: 55%;
+  }
+
+  .item-two picture {
+    top: 0%;
+    right: 40%;
+    transform: scale(0.5);
+  }
+
+  .item-three picture {
+    top: 10%;
+    left: 65%;
+  }
+
+  .signup {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5rem;
+    height: 300px;
+  }
+
+  .signup h4 {
+    max-width: 500px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #header .nav-links {
+    transform: translateX(-100%);
+  }
+
+  .footer-info {
+    padding: 0 168px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  #header .nav-links {
+    transform: translateX(-200%);
+  }
+}
+/* =========== End Media Query for Desktop =========== */

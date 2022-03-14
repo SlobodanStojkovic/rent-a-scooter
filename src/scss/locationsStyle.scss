@@ -1,0 +1,95 @@
+@import "fonts";
+@import "reset";
+@import "variables";
+@import "global";
+@import "header";
+@import "hero";
+@import "footer";
+@import "media-query";
+
+/* =========== Start Map Section =========== */
+.map-img {
+  padding: 1.5rem 2rem;
+}
+
+.map-img img {
+  width: 100%;
+  height: auto;
+  background-color: $snow;
+}
+
+.mobile-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mobile-desc ul li {
+  width: 80vw;
+  padding: 1rem;
+  background: $lightyellow;
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-family: $spacemono;
+  color: $darknavy;
+}
+/* =========== End Map Section =========== */
+
+/* =========== Start City Section =========== */
+.city-desc {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem 2rem;
+}
+
+.city-desc h2 {
+  font-size: 3rem;
+  color: $dark;
+  font-size: 2rem;
+}
+
+.city-desc p {
+  color: $dark;
+  padding: 1rem 0;
+}
+/* =========== End City Section =========== */
+
+/* =========== Start Media Query for Tablet =========== */
+@media only screen and (min-width: 768px) {
+  .map-container {
+    padding: 3rem 3.5rem;
+  }
+  .mobile-desc {
+    display: none;
+  }
+  .city-container {
+    padding: 3rem 3.5rem;
+  }
+}
+/* =========== End Media Query for Tablet =========== */
+
+/* =========== Start Media Query for Desktop =========== */
+@media only screen and (min-width: 920px) {
+  .city-desc {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    text-align: left;
+    gap: 2rem;
+  }
+
+  .city-desc h2 {
+    max-width: 350px;
+    flex: 1;
+  }
+
+  .city-desc p {
+    max-width: 440px;
+    flex: 2;
+  }
+}
+/* =========== End Media Query for Desktop =========== */

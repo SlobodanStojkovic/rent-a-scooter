@@ -1,0 +1,116 @@
+#header {
+  position: relative;
+  z-index: 1000;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+}
+
+#header .logo {
+  transform: translateX(-90%);
+}
+
+#header .header {
+  background-color: none;
+  transition: 0.3s ease background-color;
+}
+
+#header .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  width: 100%;
+  height: 4rem;
+  padding: 1.8rem 2rem;
+}
+
+#header .nav-list .nav-item {
+  position: absolute;
+  background-color: $darknavy;
+  /* =========== width: 16rem; =========== */
+  height: 100vh;
+  left: 100%;
+  top: auto;
+  margin-top: 1.1rem;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  z-index: 1;
+  transition: 0.6s cubic-bezier(0.25, 1, 0.5, 1) left;
+  padding: 3rem 2rem;
+}
+
+#header .nav-list .nav-item li a {
+  color: $lightgrey;
+  text-transform: capitalize;
+  font-family: $spacemono;
+  font-size: 1.125rem;
+  line-height: 2;
+}
+
+#header .nav-list .nav-item .btn {
+  margin-top: 52vh;
+}
+
+#header .nav-list ul.active {
+  left: 0%;
+}
+
+#header .hamburger {
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transform: scale(0.7);
+}
+
+#header .hamburger:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+}
+
+#header .hamburger .bar {
+  height: 3px;
+  width: 35px;
+  position: relative;
+  background-color: $yellow;
+}
+
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  background-color: $yellow;
+  transition: 0.3s ease;
+  transition-property: top, bottom;
+}
+
+#header .hamburger .bar::after {
+  top: 8px;
+}
+
+#header .hamburger .bar::before {
+  bottom: 8px;
+}
+
+#header .hamburger.active .bar::before {
+  bottom: 0;
+}
+
+#header .hamburger.active .bar::after {
+  top: 0;
+}
+
+.nav-btn {
+  display: none;
+}

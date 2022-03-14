@@ -1,0 +1,42 @@
+/* =========== Start Hero Section =========== */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-container picture {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 1.5rem;
+  position: absolute;
+  top: 20%;
+}
+
+.hero-desc h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: $lightgrey;
+}
+
+.hero-desc p {
+  text-align: center;
+  color: $lightgrey;
+  padding: 1.4rem 0;
+}
+
+.right-arrow {
+  position: absolute;
+  bottom: 4%;
+  left: 0;
+}
+/* =========== End Hero Section =========== */
