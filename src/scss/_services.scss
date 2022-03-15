@@ -1,0 +1,28 @@
+/* =========== Start Services Section =========== */
+.services {
+  padding: 6rem 1.2rem;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.service img {
+  width: 56px;
+}
+
+.service h2 {
+  text-align: center;
+  color: $darknavy;
+  font-size: 1.25rem;
+  padding: 1.5rem 0;
+}
+
+.service p {
+  text-align: center;
+  color: $dimgrey;
+}
+/* =========== End Services Section =========== */

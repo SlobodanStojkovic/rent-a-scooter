@@ -58,6 +58,10 @@
     color: $yellow;
   }
 
+  .hero-desc {
+    gap: unset;
+  }
+
   .hero-desc .text h1 {
     font-size: 3.5rem;
     width: 575px;
@@ -158,6 +162,23 @@
     border-radius: 50%;
     right: -1%;
     bottom: 5%;
+  }
+
+  .hero-desc {
+    position: absolute;
+    width: 446px;
+    left: 10%;
+  }
+
+  .right-arrow {
+    position: absolute;
+    left: unset;
+    right: 15%;
+    width: 460px;
+  }
+
+  .images picture img {
+    width: 730px;
   }
 
   .services {
