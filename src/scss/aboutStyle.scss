@@ -1,0 +1,295 @@
+@import "fonts";
+@import "reset";
+@import "variables";
+@import "global";
+@import "header";
+@import "hero";
+@import "facility";
+@import "sign-up";
+@import "footer";
+@import "media-query";
+
+/* =========== Start Hero Section =========== */
+
+.hero-desc .text h1 {
+  padding: 2rem 0;
+}
+
+.white-circle {
+  display: none;
+}
+/*  =========== End Hero Section  =========== */
+
+/* =========== Start Facility Section =========== */
+.facility-container {
+  margin: 5rem 0;
+}
+
+.facility .facility-text h2 {
+  font-size: 2rem;
+  color: $darknavy;
+}
+/* =========== End Facility Section =========== */
+
+/* =========== Start Our Values Section =========== */
+.values-container h3 {
+  font-size: 2rem;
+  color: $darknavy;
+  padding: 1rem 0;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.value-img {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.value-img img {
+  border-radius: 50%;
+}
+
+.fill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $yellow;
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: $darknavy;
+  position: absolute;
+  top: 75%;
+  right: 30%;
+  z-index: 10;
+  font-family: $spacemono;
+}
+
+.value-text h4 {
+  font-size: 1.5rem;
+  font-family: $spacemono;
+  color: $darknavy;
+  padding: 1.2rem 0;
+  color: $darknavy;
+}
+
+.value-text p {
+  color: $darknavy;
+}
+/* =========== End Our Value Section =========== */
+
+/* =========== Start FAQs Section =========== */
+.faqs-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.faqs-all {
+  padding: 1rem 1.5rem;
+  width: 95%;
+
+  .faqs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.faqs {
+  display: flex;
+}
+
+.faqs-container h5 {
+  font-size: 2rem;
+  color: $darknavy;
+  padding: 2rem 0;
+}
+
+.faqs-desc {
+  background-color: $snow;
+  padding: 1.2rem 1.8rem;
+  transition: 0.6s cubic-bezier(0.12, 0, 0.39, 0);
+  margin-bottom: 1.2rem;
+}
+
+.faqs-desc:hover,
+.faqs-desc:focus {
+  background: #fff4e0;
+}
+
+.faqs-heading {
+  width: 30%;
+}
+
+.faqs-heading {
+  width: 30%;
+}
+
+.faq-1,
+.faq-2 {
+  width: 100%;
+}
+
+.faqs-heading h6 {
+  font-size: 1.5rem;
+  color: $darknavy;
+  margin-bottom: 2rem;
+}
+
+.arrow-down {
+  width: 16px;
+  height: 8px;
+}
+
+.faqs-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faqs-icon span {
+  color: $darknavy;
+  font-size: 1.125rem;
+  font-family: $spacemono;
+  font-weight: 700;
+  text-align: left;
+  padding: 1.2rem 0;
+}
+
+.faqs-text p {
+  text-align: left;
+  color: $dark;
+}
+
+.faqs-text {
+  display: none;
+  animation-name: faqs-text;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes faqs-text {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.active span {
+  color: $dark;
+}
+
+.arrow-active {
+  transform: scaleY(-1);
+}
+
+.safe-driving {
+  align-items: center;
+  justify-content: center;
+}
+
+.safe-driving h6 {
+  text-align: center;
+  margin-top: 3rem;
+}
+/* =========== End FAQs Section =========== */
+
+/* =========== Start Media Query for Tablet =========== */
+@media only screen and (min-width: 768px) {
+  .white-circle {
+    display: block;
+  }
+
+  .hero-desc {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero-desc .text h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+  }
+
+  .facility .facility-text h2 {
+    font-size: var(3rem);
+    width: 485px;
+    text-align: center;
+  }
+
+  .facility .facility-text p {
+    width: 620px;
+  }
+
+  .values-container h3 {
+    font-size: var(3rem);
+  }
+
+  .value-text h4 {
+    font-size: 2rem;
+  }
+
+  .value-text p {
+    width: 490px;
+  }
+}
+/* =========== End Media Query for Tablet =========== */
+
+/* =========== Start Media Query for Desktop =========== */
+@media only screen and (min-width: 920px) {
+  .facility .facility-text h2 {
+    text-align: left;
+  }
+
+  .facility .facility-text {
+    flex: 1;
+    max-width: 650px;
+    align-items: flex-start;
+    padding: 2rem 5.35rem;
+  }
+
+  .values-container {
+    text-align: center;
+  }
+
+  .values {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .value-text p {
+    width: 350px;
+  }
+
+  .faqs-heading h6 {
+    font-size: var(--fs-v3-700);
+  }
+
+  .faqs-all {
+    .faqs {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+/* =========== End Media Query for Desktop =========== */
