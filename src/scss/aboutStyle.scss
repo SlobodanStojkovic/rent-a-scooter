@@ -11,10 +11,6 @@
 
 /* =========== Start Hero Section =========== */
 
-.hero-desc .text h1 {
-  padding: 2rem 0;
-}
-
 .white-circle {
   display: none;
 }
@@ -215,18 +211,6 @@
 @media only screen and (min-width: 768px) {
   .white-circle {
     display: block;
-  }
-
-  .hero-desc {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .hero-desc .text h1 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 3rem;
   }
 
   .facility .facility-text h2 {

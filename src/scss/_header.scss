@@ -28,10 +28,9 @@
 #header .nav-list .nav-item {
   position: absolute;
   background-color: $darknavy;
-  /* =========== width: 16rem; =========== */
   height: 100vh;
   left: 100%;
-  top: auto;
+  top: 46px;
   margin-top: 1.1rem;
   display: flex;
   justify-content: flex-start;
@@ -58,57 +57,37 @@
 }
 
 #header .hamburger {
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transform: scale(0.7);
-}
-
-#header .hamburger:after {
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
+  flex-direction: column;
 }
 
 #header .hamburger .bar {
   height: 3px;
-  width: 35px;
+  width: 24px;
   position: relative;
   background-color: $yellow;
+  margin: 2px 0;
+  transition: all 0.3s ease-in-out;
 }
 
-#header .hamburger .bar::after,
-#header .hamburger .bar::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  background-color: $yellow;
-  transition: 0.3s ease;
-  transition-property: top, bottom;
+#header .hamburger.active .bar {
+  &:nth-child(1) {
+    transform: rotate(45deg) translateX(2px);
+  }
+
+  &:nth-child(2) {
+    transform: rotate(135deg) translateX(-2px);
+  }
+
+  &:nth-child(3) {
+    display: none;
+  }
 }
 
-#header .hamburger .bar::after {
-  top: 8px;
-}
-
-#header .hamburger .bar::before {
-  bottom: 8px;
-}
-
-#header .hamburger.active .bar::before {
-  bottom: 0;
-}
-
-#header .hamburger.active .bar::after {
-  top: 0;
+#header .hamburger.active .bar {
+  height: 3px;
+  width: 24px;
+  margin: 0;
 }
 
 .nav-btn {

@@ -3,22 +3,9 @@ const mobile_menu = document.querySelector("#header .nav-bar .nav-list ul");
 const menu_item = document.querySelectorAll(".nav-list ul li a");
 const header = document.querySelector("#header .container");
 
-console.log(hamburger)
-console.log(mobile_menu)
-console.log(menu_item)
-console.log(header)
-
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   mobile_menu.classList.toggle("active");
-});
-
-document.addEventListener("scroll", () => {
-  var scroll_position = window.scrollY;
-  if (scroll_position > 250) {
-  } else {
-    header.style.backgroundColor = "transparent";
-  }
 });
 
 menu_item.forEach((item) => {
@@ -27,3 +14,28 @@ menu_item.forEach((item) => {
     mobile_menu.classList.toggle("active");
   });
 });
+
+menu_item.forEach((item) => {
+  item.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    mobile_menu.classList.toggle("active");
+  });
+});
+
+let faqsRow = document.querySelectorAll(".faqs-icon");
+let arrow = document.querySelectorAll(".arrow-down");
+
+for (let i = 0; i < faqsRow.length; i++) {
+  faqsRow[i].addEventListener("click", () => {
+    let focusFaqs = faqsRow[i];
+    focusFaqs.classList.toggle("active");
+    arrow[i].classList.toggle("arrow-active");
+
+    let text = focusFaqs.nextElementSibling;
+    if (text.style.display === "block") {
+      text.style.display = "none";
+    } else {
+      text.style.display = "block";
+    }
+  });
+}
