@@ -239,6 +239,28 @@
 
 /* =========== Start Media Query for Desktop =========== */
 @media only screen and (min-width: 920px) {
+  .item-one .images {
+    max-width: 650px;
+    width: 50%;
+    img {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  .item-one .facility-text {
+    max-width: 650px;
+    width: 50%;
+
+    h2 {
+      width: 100%;
+    }
+
+    p {
+      width: 100%;
+    }
+  }
+
   .facility .facility-text h2 {
     text-align: left;
   }
@@ -259,6 +281,7 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    flex-wrap: wrap;
   }
 
   .value-text p {
