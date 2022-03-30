@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .service img {
@@ -18,11 +18,15 @@
   text-align: center;
   color: $darknavy;
   font-size: 1.25rem;
+  line-height: 28px;
   padding: 1.5rem 0;
 }
 
 .service p {
   text-align: center;
+  font-family: $lexenddeca;
   color: $dimgrey;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 /* =========== End Services Section =========== */

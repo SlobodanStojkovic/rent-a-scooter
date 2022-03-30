@@ -1,4 +1,10 @@
 /* =========== Start Hero Section =========== */
+.hero {
+  background-image: url(../assets/images/home-hero-mobile.jpg);
+  background-repeat: no-repeat;
+  height: 650px;
+  background-size: cover;
+}
 .hero-container {
   display: flex;
   align-items: center;
@@ -19,9 +25,8 @@
   flex-direction: column;
   padding: 0rem 1.5rem;
   position: absolute;
-  padding-top: 5%;
+  padding: 7.2rem 2rem 0;
   top: 20%;
-  gap: 30px;
 }
 
 .hero-desc h1 {
@@ -33,12 +38,17 @@
 .hero-desc p {
   text-align: center;
   color: $lightgrey;
-  padding: 1.4rem 0;
+  padding: 1.5rem 0 2.2rem;
+  font-family: $lexenddeca;
+}
+
+.hero-desc a {
+  align-self: center;
 }
 
 .right-arrow {
   position: absolute;
-  bottom: 4%;
+  top: 540px;
   left: 0;
 }
 

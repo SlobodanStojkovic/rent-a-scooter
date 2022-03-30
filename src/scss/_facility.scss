@@ -9,6 +9,7 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 5rem;
+  justify-content: space-between;
 }
 
 .item-one picture {
@@ -20,7 +21,7 @@
 .item-two picture {
   position: absolute;
   top: 0;
-  right: 50%;
+  right: 32%;
 }
 
 .item-three picture {
@@ -32,7 +33,7 @@
 .images .image {
   width: 410px;
   border-radius: 50%;
-  padding: 0 2rem;
+  padding: 0 3rem;
   margin: 0 auto;
 }
 
@@ -40,16 +41,20 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 1.35rem;
+  padding: 3.5rem 1.35rem;
 }
 
 .facility-text h3 {
   font-size: 2rem;
   color: $darknavy;
+  line-height: 28px;
 }
 
 .facility p {
-  color: $darknavy;
-  padding: 2.5rem 0;
+  color: $dimgrey;
+  font-family: $lexenddeca;
+  font-size: 0.95rem;
+  line-height: 25px;
+  padding: 2rem 0;
 }
 /* =========== End Facility Section =========== */
