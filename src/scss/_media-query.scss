@@ -179,14 +179,52 @@
     top: 36.5%;
   }
 
+  .item-one picture::after {
+    content: "";
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    background-color: $lightgrey;
+    position: absolute;
+    z-index: -1;
+    right: -354px;
+    top: -300px;
+  }
+
   .item-two picture {
     right: 54%;
   }
+
+  .item-two picture::after {
+    content: "";
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    background-color: $lightgrey;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: -250px;
+  }
+
 
   .item-three picture {
     top: 10%;
     left: 54%;
   }
+
+  .item-three picture::after {
+    content: "";
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    background-color: $lightgrey;
+    position: absolute;
+    z-index: -1;
+    right: 30px;
+    top: -80px;
+  }
+
 
   .facility-text {
     h3 {
