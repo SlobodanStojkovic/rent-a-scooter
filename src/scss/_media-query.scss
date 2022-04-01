@@ -195,7 +195,7 @@
     right: 54%;
   }
 
-  .item-two picture::after {
+  .item-two .images::before {
     content: "";
     width: 445px;
     height: 445px;
@@ -204,9 +204,8 @@
     position: absolute;
     z-index: -1;
     top: 0px;
-    left: -250px;
+    left: -360px;
   }
-
 
   .item-three picture {
     top: 10%;
@@ -224,7 +223,6 @@
     right: 30px;
     top: -80px;
   }
-
 
   .facility-text {
     h3 {
@@ -253,36 +251,53 @@
 /* =========== End Media Query for Tablet =========== */
 
 /* =========== Start Media Query for Desktop =========== */
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
+  #header .nav-bar {
+    padding: 2rem 10rem;
+  }
+
   .outline {
-    right: 4%;
-    bottom: 33%;
+    right: 9%;
+    bottom: -480px;
   }
 
   .outline-2 {
-    right: 9%;
-    bottom: 33%;
+    right: 3%;
+    bottom: -480px;
   }
 
   .fill-3 {
-    right: -1%;
-    bottom: 33%;
+    right: -3%;
+    bottom: -480px;
   }
 
   .hero-desc {
     position: absolute;
     width: 446px;
     left: 10%;
-    top: 33%;
-    padding-top: 1%;
+    padding: 10rem 0 0 6rem;
 
     .text h1 {
       text-align: left;
+      font-family: $spacemono;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -2.5px;
+      width: 500px;
     }
 
     .text p {
       text-align: left;
-      padding-left: 5rem;
+      margin-left: 6rem;
+      font-family: $lexenddeca;
+      font-size: 0.9rem;
+      line-height: 25px;
+      width: 405px;
+    }
+
+    a {
+      margin-left: 1.3rem;
+      align-self: flex-start;
     }
   }
 
@@ -291,15 +306,15 @@
     width: 150px;
     border-bottom: 15px solid $yellow;
     position: absolute;
-    top: 54%;
+    top: 340px;
     left: 0;
   }
 
   .right-arrow {
     position: absolute;
     left: unset;
-    right: 15%;
-    top: 54%;
+    right: 21%;
+    top: 340px;
     width: 460px;
   }
 
@@ -339,19 +354,40 @@
 
   .service .icon {
     position: absolute;
-    left: 5rem;
+    left: 3rem;
     bottom: 15rem;
+  }
+
+  .service:nth-child(1) .icon {
+    position: absolute;
+    left: 8rem;
+    bottom: 15rem;
+  }
+
+  .service-text {
+    margin-left: 3rem;
+  }
+
+  .service:nth-child(1) .service-text {
+    margin-left: 8rem;
   }
 
   .facility {
     display: flex;
     flex-direction: row;
     text-align: left;
-    padding: 0 4rem;
+    padding: 0 10rem;
+  }
+
+  .facility-text {
+    width: 445px;
   }
 
   .facility h3 {
     font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+    letter-spacing: -2.14px;
     max-width: 500px;
   }
 
@@ -369,8 +405,19 @@
   }
 
   .item-one picture {
-    top: 46%;
-    left: 55%;
+    top: 66%;
+    left: 43%;
+  }
+
+  .item-one picture::after {
+    right: -410px;
+    top: -293px;
+  }
+
+  .facility__right-arrow {
+    position: absolute;
+    right: 1600px;
+    top: -333px;
   }
 
   .item-two picture {
@@ -379,9 +426,23 @@
     transform: scale(0.5);
   }
 
+  .item-two .images::before {
+    left: -320px;
+  }
+
   .item-three {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .item-three .images picture {
+    top: 17%;
+    left: 68%;
+  }
+
+  .item-three .images picture::after {
+    right: -65px;
+    top: -80px;
   }
 
   .images .image {
@@ -396,6 +457,12 @@
   .facility .images {
     flex: 1;
     max-width: 650px;
+  }
+
+  .facility .images .image {
+    width: 445px;
+    height: 445px;
+    padding: 0;
   }
 
   .facility .facility-text {

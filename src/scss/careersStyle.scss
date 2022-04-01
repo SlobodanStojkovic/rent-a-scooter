@@ -96,7 +96,7 @@
   font-family: $spacemono;
 }
 
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .values {
     display: flex;
     align-items: center;
@@ -150,7 +150,7 @@
 /* =========== End Media Query for Tablet =========== */
 
 /* =========== Start Media Query for Desktop =========== */
-@media only screen and (min-width: 920px) {
+@media only screen and (min-width: 1024px) {
   .values {
     display: flex;
     align-items: center;
