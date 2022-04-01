@@ -10,9 +10,17 @@
 @import "media-query";
 
 /* =========== Start Hero Section =========== */
-
 .white-circle {
   display: none;
+}
+
+.hero {
+  max-height: 160px;
+}
+
+.hero-desc {
+  padding: 3.2rem 2rem;
+  top: 0;
 }
 /*  =========== End Hero Section  =========== */
 

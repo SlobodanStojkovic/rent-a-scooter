@@ -4,7 +4,16 @@
   background-repeat: no-repeat;
   height: 650px;
   background-size: cover;
+
+  @media (min-width: 768px) {
+    background-image: url(../assets/images/home-hero-tablet.jpg);
+  }
+
+  @media (min-width: 1024px) {
+    background-image: url(../assets/images/home-hero-desktop.jpg);
+  }
 }
+
 .hero-container {
   display: flex;
   align-items: center;
