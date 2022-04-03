@@ -33,13 +33,16 @@
   font-size: 2rem;
   color: $darknavy;
 }
+
+#about-arrow2 {
+  right: 8%;
+}
 /* =========== End Facility Section =========== */
 
 /* =========== Start Our Values Section =========== */
 .values-container h3 {
   font-size: 2rem;
   color: $darknavy;
-  padding: 1rem 0;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -77,18 +80,26 @@
   right: 30%;
   z-index: 10;
   font-family: $spacemono;
+  font-weight: 700;
 }
 
 .value-text h4 {
   font-size: 1.5rem;
   font-family: $spacemono;
   color: $darknavy;
-  padding: 1.2rem 0;
+  padding: 1.75rem 0;
   color: $darknavy;
 }
 
 .value-text p {
-  color: $darknavy;
+  font-family: $lexenddeca;
+  font-size: 0.95rem;
+  line-height: 25px;
+  color: $dimgrey;
+}
+
+.value:last-child {
+  margin-bottom: 10rem;
 }
 /* =========== End Our Value Section =========== */
 
@@ -99,10 +110,19 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+
+  h5 {
+    font-family: $spacemono;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: -1.43px;
+    color: $darknavy;
+    padding: 3rem 0;
+  }
 }
 
 .faqs-all {
-  padding: 1rem 1.5rem;
+  padding: 0rem 1.5rem 1rem;
   width: 95%;
 
   .faqs {
@@ -112,34 +132,11 @@
   }
 }
 
-.faqs {
-  display: flex;
-}
-
-.faqs-container h5 {
-  font-size: 2rem;
-  color: $darknavy;
-  padding: 2rem 0;
-}
-
 .faqs-desc {
   background-color: $snow;
-  padding: 1.2rem 1.8rem;
+  padding: 2rem 1.8rem 2rem 2rem;
   transition: 0.3s cubic-bezier(0.12, 0, 0.39, 0);
-  margin-bottom: 1.2rem;
-}
-
-.faqs-desc:hover,
-.faqs-desc:focus {
-  background: #fff4e0;
-}
-
-.faqs-heading {
-  width: 30%;
-}
-
-.faqs-heading {
-  width: 30%;
+  margin-bottom: 1rem;
 }
 
 .faq-1,
@@ -148,9 +145,12 @@
 }
 
 .faqs-heading h6 {
+  font-family: $spacemono;
   font-size: 1.5rem;
   color: $darknavy;
   margin-bottom: 2rem;
+  line-height: 28px;
+  letter-spacing: -1.07px;
 }
 
 .arrow-down {
@@ -163,6 +163,8 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  line-height: 1.5rem;
+  letter-spacing: -0.8px;
 }
 
 .faqs-icon span {
@@ -177,6 +179,9 @@
 .faqs-text p {
   text-align: left;
   color: $dark;
+  font-family: $lexenddeca;
+  font-size: 0.95rem;
+  line-height: 25px;
 }
 
 .faqs-text {
