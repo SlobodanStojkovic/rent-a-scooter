@@ -189,6 +189,7 @@
     z-index: -1;
     right: -354px;
     top: -300px;
+    z-index: -1;
   }
 
   .item-two picture {
@@ -377,7 +378,7 @@
     flex-direction: row;
     text-align: left;
     padding: 0 10rem;
-    gap: 220px;
+    justify-content: space-between;
   }
 
   .facility-text {
@@ -408,6 +409,10 @@
   .item-one picture {
     top: 66%;
     left: 50%;
+  }
+
+  .item-one .images {
+    text-align: end;
   }
 
   .item-one picture::after {
@@ -475,13 +480,17 @@
   .signup {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 5rem;
+    padding: 0 10rem;
     height: 300px;
   }
 
   .signup h4 {
     max-width: 500px;
     text-align: left;
+  }
+
+  .signup-icon {
+    padding: 0;
   }
 }
 
