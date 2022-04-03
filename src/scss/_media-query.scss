@@ -241,6 +241,8 @@
   }
 
   .signup-heading {
+    max-width: 457px;
+
     h4 {
       font-size: 3rem;
       line-height: 3rem;
@@ -482,6 +484,7 @@
     justify-content: space-between;
     padding: 0 10rem;
     height: 300px;
+    gap: unset;
   }
 
   .signup h4 {

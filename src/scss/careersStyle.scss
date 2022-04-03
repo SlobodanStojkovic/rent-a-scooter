@@ -10,17 +10,62 @@
 @import "media-query";
 
 /* =========== Start General Section =========== */
+#hero-careers {
+  background-image: url("../assets/images/careers-location-hero-mobile.jpg");
+  height: 160px;
+
+  .hero-desc {
+    padding: 0;
+    top: 60px;
+  }
+}
+#careers-main .images .image {
+  padding: 0;
+}
+
+#careers-main .facility-container {
+  margin: 4rem 2rem;
+}
+
+#careers-main .facility-text {
+  padding: 4rem 0;
+}
+
+#careers-main .facility-text {
+  h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: -1.43px;
+    font-family: $spacemono;
+    color: $darknavy;
+  }
+
+  p {
+    line-height: 25px;
+  }
+}
+
+.fill {
+  font-weight: bold;
+}
+
+#careers-main .values-container h3 {
+  letter-spacing: -1.43px;
+  line-height: 2rem;
+}
+
 .general-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 5rem 0;
   text-align: center;
+  margin: 0 2rem 7rem;
 }
 
 .general {
-  width: 95vw;
-  height: 25vh;
+  width: 311px;
+  height: 190px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,11 +81,15 @@
 
 .general-desc h5 {
   font-size: 1.125rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 /* =========== End General Section =========== */
 
 /* =========== Start Why Join us Section =========== */
+.values-container {
+  padding-bottom: 4rem;
+}
+
 .values-container h3 {
   font-size: 2rem;
   color: $darknavy;
@@ -68,15 +117,20 @@
 }
 
 .value-text h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: $spacemono;
   color: $darknavy;
+  line-height: 28px;
+  letter-spacing: -1.07px;
   padding: 1.2rem 0;
   color: $darknavy;
 }
 
 .value-text p {
-  color: $darknavy;
+  color: $dimgrey;
+  font-family: $lexenddeca;
+  font-size: 0.95rem;
+  line-height: 25px;
 }
 
 .fill {
@@ -122,29 +176,81 @@
 
 /* =========== Start Media Query for Tablet =========== */
 @media only screen and (min-width: 768px) {
+  #careers-main .facility-container {
+    margin: 0;
+  }
+
+  #careers-main .facility-container {
+    padding: 8rem 0 0 0;
+  }
+
+  #careers-main .facility-text {
+    h2 {
+      font-size: 3rem;
+      line-height: 3rem;
+      letter-spacing: -2.14px;
+      font-weight: bold;
+      max-width: 457px;
+    }
+
+    p {
+      font-family: $lexenddeca;
+      font-size: 0.95rem;
+      line-height: 25px;
+    }
+  }
+
+  #hero-careers {
+    background-image: url("../assets/images/careers-locations-hero-tablet.jpg");
+
+    .hero-desc {
+      h1 {
+        text-align: start;
+      }
+    }
+  }
+
+  #hero-careers .circle {
+    .outline,
+    .outline-2,
+    .fill-3 {
+      bottom: -110px;
+    }
+  }
+
   .general {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2.5rem 2rem;
+    padding: 2rem 3rem;
     text-align: left;
     width: 90vw;
+    height: fit-content;
   }
 
   .general-desc h5 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .values-container h3 {
     font-size: 3rem;
+    margin-bottom: 5rem;
   }
 
   .value-text h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .value-text p {
     width: 490px;
+  }
+
+  .general-desc {
+    margin-bottom: 0;
+
+    h5 {
+      padding-bottom: 0.5rem;
+    }
   }
 }
 /* =========== End Media Query for Tablet =========== */
@@ -157,6 +263,10 @@
     justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
+  }
+
+  #hero-careers {
+    background-image: url("../assets/images/careers-locations-hero-desktop.jpg");
   }
 
   .values-container {
