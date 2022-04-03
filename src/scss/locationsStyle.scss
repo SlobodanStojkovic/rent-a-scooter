@@ -89,14 +89,41 @@
     background-image: url("../assets/images/careers-locations-hero-tablet.jpg");
   }
 
+  .circle-locations {
+    .outline,
+    .outline-2,
+    .fill-3 {
+      top: 50px;
+    }
+  }
+
+  .locations-hero-desc {
+    left: -45px;
+  }
+
   .map-container {
-    padding: 3rem 3.5rem;
+    padding: 8rem 3.5rem 3rem;
   }
   .mobile-desc {
     display: none;
   }
   .city-container {
-    padding: 3rem 3.5rem;
+    padding: 3rem 3.5rem 10rem;
+  }
+
+  .city-desc {
+    padding: 0;
+
+    h2 {
+      font-size: 3rem;
+      line-height: 3rem;
+      letter-spacing: -2.14px;
+      max-width: 460px;
+    }
+
+    p {
+      padding: 2.5rem 0;
+    }
   }
 }
 /* =========== End Media Query for Tablet =========== */
@@ -113,6 +140,7 @@
     flex-direction: row;
     text-align: left;
     gap: 2rem;
+    padding: 0 6.5rem;
   }
 
   .city-desc h2 {
@@ -123,6 +151,26 @@
   .city-desc p {
     max-width: 440px;
     flex: 2;
+  }
+
+  .locations-hero-desc {
+    left: 10%;
+  }
+
+  .city-container {
+    padding-bottom: 7rem;
+  }
+
+  .circle-locations {
+    .outline {
+      right: 8%;
+    }
+    .outline-2 {
+      right: 3%;
+    }
+    .fill-3 {
+      right: -2%;
+    }
   }
 }
 /* =========== End Media Query for Desktop =========== */
