@@ -267,16 +267,58 @@
 
   #hero-careers {
     background-image: url("../assets/images/careers-locations-hero-desktop.jpg");
+    height: 200px;
+
+    .hero-desc {
+      padding: 0;
+      top: 80px;
+    }
+  }
+
+  #hero-careers .circle {
+    .outline,
+    .outline-2,
+    .fill-3 {
+      bottom: -130px;
+    }
   }
 
   .values-container {
     text-align: center;
   }
-}
 
-@media only screen and (min-width: 1440px) {
+  #careers-main .values-container {
+    h3 {
+      line-height: 3rem;
+    }
+  }
+
+  .general-container {
+    margin: 0 10rem 10rem;
+
+    .general {
+      width: 100%;
+    }
+  }
+
+  .values-container {
+    padding: 0 10rem;
+  }
+
   .values {
+    width: 100%;
     flex-wrap: nowrap;
+
+    .value {
+      width: 33%;
+      margin-bottom: 7.5rem;
+
+      .value-text {
+        p {
+          width: 100%;
+        }
+      }
+    }
   }
 }
 /* =========== End Media Query for Desktop =========== */

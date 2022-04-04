@@ -421,10 +421,23 @@
     padding: 0 8rem 0 10rem;
   }
 
+  .faqs-all {
+    align-self: flex-start;
+    width: 100%;
+  }
+
   .faqs-container h5 {
     font-size: 3rem;
     line-height: 3rem;
     letter-spacing: -2.14px;
+  }
+  
+  .values-container {
+    padding: 0 10rem;
+
+    .values {
+      justify-content: space-between;
+    }
   }
 }
 
