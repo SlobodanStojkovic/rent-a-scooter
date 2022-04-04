@@ -132,6 +132,7 @@
 @media only screen and (min-width: 1024px) {
   #hero-section {
     background-image: url("../assets/images/careers-locations-hero-desktop.jpg");
+    height: 200px;
   }
 
   .city-desc {
@@ -154,7 +155,12 @@
   }
 
   .locations-hero-desc {
-    left: 10%;
+    left: 187px;
+  }
+
+  .locations-hero-desc {
+    padding: 0;
+    top: 80px;
   }
 
   .city-container {
@@ -163,12 +169,15 @@
 
   .circle-locations {
     .outline {
-      right: 8%;
+      top: 80px;
+      right: 10%;
     }
     .outline-2 {
-      right: 3%;
+      top: 80px;
+      right: 4%;
     }
     .fill-3 {
+      top: 80px;
       right: -2%;
     }
   }

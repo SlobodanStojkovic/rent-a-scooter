@@ -305,6 +305,21 @@
     padding: 0 10rem;
   }
 
+  .circle {
+    .outline {
+      top: 80px;
+      right: 10%;
+    }
+    .outline-2 {
+      top: 80px;
+      right: 4%;
+    }
+    .fill-3 {
+      top: 80px;
+      right: -2%;
+    }
+  }
+
   .values {
     width: 100%;
     flex-wrap: nowrap;

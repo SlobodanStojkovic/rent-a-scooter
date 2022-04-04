@@ -19,7 +19,13 @@
 }
 
 .hero {
-  max-height: 160px;
+  @media (min-width: 768px) {
+    max-height: 160px;
+  }
+
+  @media (min-width: 1024px) {
+    max-height: 200px;
+  }
 }
 
 .hero-desc {
@@ -311,6 +317,7 @@
 
   .about-hero {
     background: url("../assets/images/about-hero-desktop.jpg");
+    height: 200px;
   }
 
   #hero-desc-about {
@@ -391,18 +398,26 @@
     }
   }
 
+  #hero-about .hero-desc {
+    padding: 0;
+    top: 80px;
+  }
+
   .faqs-text p {
     width: 90%;
   }
 
-  .about-hero {
+  .circle {
     .outline {
+      top: 80px;
       right: 10%;
     }
     .outline-2 {
+      top: 80px;
       right: 4%;
     }
     .fill-3 {
+      top: 80px;
       right: -2%;
     }
   }
@@ -431,7 +446,7 @@
     line-height: 3rem;
     letter-spacing: -2.14px;
   }
-  
+
   .values-container {
     padding: 0 10rem;
 

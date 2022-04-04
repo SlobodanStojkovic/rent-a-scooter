@@ -385,6 +385,7 @@
 
   .facility-text {
     width: 445px;
+    padding: 3.5rem 0;
   }
 
   .facility h3 {
@@ -495,6 +496,32 @@
   .signup-icon {
     padding: 0;
   }
+
+  .values-container .values {
+    flex-wrap: nowrap;
+  }
+
+  #circle {
+    .outline,
+    .outline-2,
+    .fill-3 {
+      bottom: -130px;
+    }
+  }
+
+  .circle {
+    .outline {
+      right: 10%;
+    }
+
+    .outline-2 {
+      right: 4%;
+    }
+
+    .fill-3 {
+      right: -2%;
+    }
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -504,6 +531,10 @@
 
   .footer-info {
     padding: 0 168px;
+  }
+
+  .item-three .images {
+    text-align: end;
   }
 }
 
