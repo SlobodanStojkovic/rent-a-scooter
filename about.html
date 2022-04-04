@@ -43,37 +43,26 @@
             </div>
           </nav>
         </div>
-
-        <!-- =========== Start Hero Section =========== -->
-        <section class="hero">
-          <div class="hero-container">
-            <div class="circle">
-              <div class="outline"></div>
-              <div class="outline-2"></div>
-              <div class="fill-3"></div>
-            </div>
-            <picture>
-              <source
-                media="(min-width: 57.5rem)"
-                srcset="./src/assets/images/about-hero-desktop.jpg"
-              />
-              <source
-                media="(min-width: 48rem)"
-                srcset="./src/assets/images/about-hero-tablet.jpg"
-              />
-              <img src="./src/assets/images/about-hero-mobile.jpg" alt="" />
-            </picture>
-            <div class="hero-desc">
-              <div class="text">
-                <h1>About</h1>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!-- =========== End Hero Section =========== -->
       </section>
     </header>
     <!-- =========== End Header Section =========== -->
+
+    <!-- =========== Start Hero Section =========== -->
+    <section class="hero about-hero" id="hero-about">
+      <div class="hero-container">
+        <div class="circle circle-about" id="circle">
+          <div class="outline"></div>
+          <div class="outline-2"></div>
+          <div class="fill-3"></div>
+        </div>
+        <div class="hero-desc hero-desc-about" id="hero-desc-about">
+          <div class="text">
+            <h1>About</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========== End Hero Section =========== -->
 
     <!-- =========== Start Main Section =========== -->
     <main>
@@ -88,9 +77,9 @@
                   src="./src/assets/images/digital-era.jpg"
                   alt=""
                 />
-                <picture>
+                <picture class="about-arrow1" id="about-arrow1">
                   <source
-                    media="(min-width: 57.5rem)"
+                    media="(min-width: 64rem)"
                     srcset="./src/assets/patterns/left-downward-arrow.svg"
                   />
                   <source
@@ -103,7 +92,7 @@
                   />
                 </picture>
               </div>
-              <div class="facility-text">
+              <div class="facility-text" id="about-facility-text">
                 <h2>Mobility for the digital era</h2>
                 <p>
                   Getting around should be simple (and even fun!) for everyone.
@@ -120,7 +109,7 @@
                   src="./src/assets/images/better-living.jpg"
                   alt=""
                 />
-                <picture>
+                <picture id="about-arrow2">
                   <source
                     media="(min-width: 48rem)"
                     srcset="./src/assets/patterns/right-arrow.svg"

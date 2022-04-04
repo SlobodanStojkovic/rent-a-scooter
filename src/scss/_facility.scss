@@ -1,4 +1,3 @@
-
 /* =========== Start Facility Section =========== */
 .facility {
   display: flex;
@@ -9,18 +8,19 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 5rem;
+  justify-content: space-between;
 }
 
 .item-one picture {
   position: absolute;
-  top: 26%;
+  top: 19%;
   left: 2%;
 }
 
 .item-two picture {
   position: absolute;
   top: 0;
-  right: 50%;
+  right: 32%;
 }
 
 .item-three picture {
@@ -30,7 +30,7 @@
 }
 
 .images .image {
-  width: 410px;
+  width: 100%;
   border-radius: 50%;
   padding: 0 2rem;
   margin: 0 auto;
@@ -40,16 +40,24 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding: 2rem 1.35rem;
+  padding: 3.5rem 2rem;
+
+  h2 {
+    line-height: 2rem;
+  }
 }
 
 .facility-text h3 {
   font-size: 2rem;
   color: $darknavy;
+  line-height: 28px;
 }
 
 .facility p {
-  color: $darknavy;
-  padding: 2.5rem 0;
+  color: $dimgrey;
+  font-family: $lexenddeca;
+  font-size: 0.95rem;
+  line-height: 25px;
+  padding: 2rem 0;
 }
 /* =========== End Facility Section =========== */
