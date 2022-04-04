@@ -10,6 +10,14 @@
 @import "media-query";
 
 /* =========== Start Hero Section =========== */
+.about-hero {
+  background: url("../assets/images/about-hero-mobile.jpg");
+  height: 160px;
+
+  @media (min-width: 1024px) {
+    height: 200px;
+  }
+}
 
 .white-circle {
   display: none;

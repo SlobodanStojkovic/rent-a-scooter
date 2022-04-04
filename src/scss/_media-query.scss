@@ -326,5 +326,13 @@
   #header .nav-links {
     transform: translateX(-200%);
   }
+
+  .item-one picture::after {
+    right: -590px;
+  }
+
+  .item-three .images picture::after {
+    right: -110px;
+  }
 }
 /* =========== End Media Query for Desktop =========== */
