@@ -4,6 +4,10 @@
     display: none;
   }
 
+  .nav-item li a {
+    line-height: 25px;
+  }
+
   .nav-item .btn {
     display: none;
   }
@@ -24,6 +28,8 @@
 
   #header .logo {
     transform: unset;
+    margin: unset;
+    padding-right: 50px;
   }
 
   #header .nav-bar {
@@ -50,7 +56,7 @@
 
   #header .nav-list .nav-item li a {
     color: $dark;
-    transition: 0.6s cubic-bezier(0.37, 0, 0.63, 1);
+    transition: 0.3s cubic-bezier(0.37, 0, 0.63, 1);
   }
 
   #header .nav-list .nav-item li a:hover,
@@ -69,6 +75,11 @@
 
   .hero-desc .text p {
     width: 575px;
+  }
+
+  .right-arrow {
+    top: 475px;
+    left: -145px;
   }
 
   .services {
@@ -126,11 +137,7 @@
   .social-icons {
     margin: 0;
   }
-}
-/* =========== End Media Query for Tablet =========== */
 
-/* =========== Start Media Query for Desktop =========== */
-@media only screen and (min-width: 920px) {
   .outline {
     position: absolute;
     display: block;
@@ -138,8 +145,8 @@
     width: 62px;
     border: 3px solid $lightgrey;
     border-radius: 50%;
-    right: 4%;
-    bottom: 33%;
+    right: 140px;
+    bottom: -610px;
   }
 
   .outline-2 {
@@ -149,8 +156,8 @@
     width: 62px;
     border: 3px solid $lightgrey;
     border-radius: 50%;
-    right: 9%;
-    bottom: 33%;
+    right: 50px;
+    bottom: -610px;
   }
 
   .fill-3 {
@@ -160,24 +167,140 @@
     width: 62px;
     background: $lightgrey;
     border-radius: 50%;
-    right: -1%;
-    bottom: 33%;
+    right: -35px;
+    bottom: -610px;
+  }
+
+  .facility {
+    margin-bottom: 3rem;
+  }
+
+  .item-one picture {
+    top: 36.5%;
+  }
+
+  .item-one picture::after {
+    content: "";
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    background-color: $lightgrey;
+    position: absolute;
+    z-index: -1;
+    right: -354px;
+    top: -300px;
+    z-index: -1;
+  }
+
+  .item-two picture {
+    right: 54%;
+  }
+
+  .item-two .images::before {
+    content: "";
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    background-color: $lightgrey;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: -360px;
+  }
+
+  .item-three picture {
+    top: 10%;
+    left: 54%;
+  }
+
+  .item-three picture::after {
+    content: "";
+    width: 445px;
+    height: 445px;
+    border-radius: 50%;
+    background-color: $lightgrey;
+    position: absolute;
+    z-index: -1;
+    right: 30px;
+    top: -80px;
+  }
+
+  .facility-text {
+    h3 {
+      max-width: 460px;
+    }
+
+    p {
+      max-width: 575px;
+      padding: 2.25rem 0;
+    }
+  }
+
+  .signup {
+    padding: 4rem 2rem;
+  }
+
+  .signup-heading {
+    max-width: 457px;
+
+    h4 {
+      font-size: 3rem;
+      line-height: 3rem;
+      font-weight: 700;
+      letter-spacing: -2.14px;
+    }
+  }
+}
+/* =========== End Media Query for Tablet =========== */
+
+/* =========== Start Media Query for Desktop =========== */
+@media only screen and (min-width: 1024px) {
+  #header .nav-bar {
+    padding: 2rem 10rem;
+  }
+
+  .outline {
+    right: 9%;
+    bottom: -480px;
+  }
+
+  .outline-2 {
+    right: 3%;
+    bottom: -480px;
+  }
+
+  .fill-3 {
+    right: -3%;
+    bottom: -480px;
   }
 
   .hero-desc {
     position: absolute;
     width: 446px;
-    left: 10%;
-    top: 33%;
-    padding-top: 1%;
+    left: 187px;
+    padding: 10rem 0 0 6rem;
 
     .text h1 {
       text-align: left;
+      font-family: $spacemono;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -2.5px;
+      width: 500px;
     }
 
     .text p {
       text-align: left;
-      padding-left: 5rem;
+      margin-left: 6rem;
+      font-family: $lexenddeca;
+      font-size: 0.9rem;
+      line-height: 25px;
+      width: 405px;
+    }
+
+    a {
+      margin-left: 1.3rem;
+      align-self: flex-start;
     }
   }
 
@@ -186,15 +309,15 @@
     width: 150px;
     border-bottom: 15px solid $yellow;
     position: absolute;
-    top: 54%;
+    top: 340px;
     left: 0;
   }
 
   .right-arrow {
     position: absolute;
     left: unset;
-    right: 15%;
-    top: 54%;
+    right: 21%;
+    top: 340px;
     width: 460px;
   }
 
@@ -222,7 +345,7 @@
     width: 500px;
     height: 20px;
     background-color: $snow;
-    top: -7.5rem;
+    top: -7.9rem;
     left: -24rem;
   }
 
@@ -234,19 +357,42 @@
 
   .service .icon {
     position: absolute;
-    left: 4.5rem;
+    left: 3rem;
     bottom: 15rem;
+  }
+
+  .service:nth-child(1) .icon {
+    position: absolute;
+    left: 8rem;
+    bottom: 15rem;
+  }
+
+  .service-text {
+    margin-left: 3rem;
+  }
+
+  .service:nth-child(1) .service-text {
+    margin-left: 8rem;
   }
 
   .facility {
     display: flex;
     flex-direction: row;
     text-align: left;
-    padding: 0 4rem;
+    padding: 0 10rem;
+    justify-content: space-between;
+  }
+
+  .facility-text {
+    width: 445px;
+    padding: 3.5rem 0;
   }
 
   .facility h3 {
     font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 700;
+    letter-spacing: -2.14px;
     max-width: 500px;
   }
 
@@ -264,8 +410,23 @@
   }
 
   .item-one picture {
-    top: 46%;
-    left: 55%;
+    top: 66%;
+    left: 50%;
+  }
+
+  .item-one .images {
+    text-align: end;
+  }
+
+  .item-one picture::after {
+    right: -340px;
+    top: -293px;
+  }
+
+  .facility__right-arrow {
+    position: absolute;
+    right: 1600px;
+    top: -333px;
   }
 
   .item-two picture {
@@ -274,9 +435,23 @@
     transform: scale(0.5);
   }
 
+  .item-two .images::before {
+    left: -356px;
+  }
+
   .item-three {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .item-three .images picture {
+    top: 17%;
+    left: 75%;
+  }
+
+  .item-three .images picture::after {
+    right: 35px;
+    top: -80px;
   }
 
   .images .image {
@@ -293,6 +468,12 @@
     max-width: 650px;
   }
 
+  .facility .images .image {
+    width: 445px;
+    height: 445px;
+    padding: 0;
+  }
+
   .facility .facility-text {
     flex: 1;
     max-width: 650px;
@@ -302,13 +483,44 @@
   .signup {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 5rem;
+    padding: 0 10rem;
     height: 300px;
+    gap: unset;
   }
 
   .signup h4 {
     max-width: 500px;
     text-align: left;
+  }
+
+  .signup-icon {
+    padding: 0;
+  }
+
+  .values-container .values {
+    flex-wrap: nowrap;
+  }
+
+  #circle {
+    .outline,
+    .outline-2,
+    .fill-3 {
+      bottom: -130px;
+    }
+  }
+
+  .circle {
+    .outline {
+      right: 10%;
+    }
+
+    .outline-2 {
+      right: 4%;
+    }
+
+    .fill-3 {
+      right: -2%;
+    }
   }
 }
 
@@ -319,6 +531,10 @@
 
   .footer-info {
     padding: 0 168px;
+  }
+
+  .item-three .images {
+    text-align: end;
   }
 }
 
