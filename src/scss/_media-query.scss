@@ -318,6 +318,10 @@
     }
   }
 
+  .service-text h2 {
+    padding: 0 0 1.75rem 0;
+  }
+
   .orange-line-desktop {
     display: block;
     width: 150px;
@@ -363,7 +367,7 @@
     width: 500px;
     height: 20px;
     background-color: $snow;
-    top: -7.9rem;
+    top: -9.4rem;
     left: -24rem;
   }
 
@@ -406,6 +410,10 @@
     padding: 3.5rem 0;
   }
 
+  .facility-text p {
+    padding: 2rem 0;
+  }
+
   .facility h3 {
     font-size: 3rem;
     line-height: 3rem;
@@ -416,6 +424,17 @@
 
   .facility p {
     max-width: 500px;
+  }
+
+  .item-two .facility-text:nth-child(2) {
+    a {
+      align-self: flex-start;
+      margin-left: 4rem;
+
+      @media (min-width: 1920px) {
+        margin-left: 9rem;
+      }
+    }
   }
 
   .item-one {
@@ -539,6 +558,14 @@
       right: -2%;
     }
   }
+
+  .facility-container {
+    margin-bottom: 11rem;
+  }
+
+  .signup picture {
+    right: 0;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -546,8 +573,18 @@
     transform: translateX(-100%);
   }
 
+  .facility {
+    gap: 220px;
+    margin-bottom: 7.5rem;
+  }
+
+  .item-one picture {
+    top: 64%;
+    left: 49%;
+  }
+
   .item-one picture::after {
-    right: -340px;
+    right: -360px;
   }
 
   .footer-info {

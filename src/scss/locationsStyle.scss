@@ -108,6 +108,7 @@
   .map-container {
     padding: 8rem 3.5rem 3rem;
   }
+
   .mobile-desc {
     display: none;
   }
@@ -140,6 +141,10 @@
     height: 200px;
   }
 
+  .map-container {
+    padding: 8rem 10rem 3rem;
+  }
+
   .city-desc {
     display: flex;
     justify-content: space-between;
@@ -155,7 +160,7 @@
   }
 
   .city-desc p {
-    max-width: 440px;
+    max-width: 445px;
     flex: 2;
   }
 

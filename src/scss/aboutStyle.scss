@@ -264,7 +264,6 @@
 
   .facility .facility-text p {
     color: $dimgrey;
-    width: 620px;
     font-family: $lexenddeca;
     font-size: 0.95rem;
     line-height: 25px;
@@ -375,6 +374,14 @@
     }
   }
 
+  .value {
+    margin-bottom: 0;
+  }
+
+  .values {
+    margin-bottom: 7.5rem;
+  }
+
   #about-arrow1 {
     top: 58.5%;
   }
@@ -396,7 +403,6 @@
     flex: 1;
     max-width: 650px;
     align-items: flex-start;
-    padding: 2rem 5.35rem;
   }
 
   .values-container {
@@ -491,6 +497,10 @@
     .values {
       justify-content: space-between;
     }
+  }
+
+  .faqs-container {
+    margin-bottom: 5rem;
   }
 }
 
