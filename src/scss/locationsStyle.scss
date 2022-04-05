@@ -47,7 +47,7 @@
   width: 80vw;
   padding: 1rem;
   background: $lightyellow;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
   text-transform: capitalize;
   font-family: $spacemono;
@@ -97,6 +97,10 @@
     }
   }
 
+  .map-img {
+    padding: 0;
+  }
+
   .locations-hero-desc {
     left: -45px;
   }
@@ -108,7 +112,7 @@
     display: none;
   }
   .city-container {
-    padding: 3rem 3.5rem 10rem;
+    padding: 3rem 3.5rem 7.5rem;
   }
 
   .city-desc {
@@ -123,6 +127,7 @@
 
     p {
       padding: 2.5rem 0;
+      max-width: 573px;
     }
   }
 }

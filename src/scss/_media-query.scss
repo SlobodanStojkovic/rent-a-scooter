@@ -55,8 +55,9 @@
   }
 
   #header .nav-list .nav-item li a {
-    color: $dark;
+    color: $dimgrey;
     transition: 0.3s cubic-bezier(0.37, 0, 0.63, 1);
+    font-size: 0.95rem;
   }
 
   #header .nav-list .nav-item li a:hover,
@@ -70,6 +71,7 @@
 
   .hero-desc .text h1 {
     font-size: 3.5rem;
+    line-height: 3.5rem;
     width: 575px;
   }
 
@@ -172,11 +174,12 @@
   }
 
   .facility {
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
   }
 
   .item-one picture {
-    top: 36.5%;
+    top: 33.5%;
+    left: 4%;
   }
 
   .item-one picture::after {
@@ -193,7 +196,7 @@
   }
 
   .item-two picture {
-    right: 54%;
+    right: 54.5%;
   }
 
   .item-two .images::before {
@@ -225,6 +228,13 @@
     top: -80px;
   }
 
+  .facility-text h3 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: bold;
+    letter-spacing: -2.14px;
+  }
+
   .facility-text {
     h3 {
       max-width: 460px;
@@ -232,12 +242,16 @@
 
     p {
       max-width: 575px;
-      padding: 2.25rem 0;
+      padding: 2.5rem 0;
     }
   }
 
   .signup {
     padding: 4rem 2rem;
+  }
+
+  .signup picture {
+    right: -21%;
   }
 
   .signup-heading {
@@ -311,6 +325,10 @@
     position: absolute;
     top: 340px;
     left: 0;
+  }
+
+  .item-one picture::after {
+    right: -140px;
   }
 
   .right-arrow {
@@ -419,7 +437,6 @@
   }
 
   .item-one picture::after {
-    right: -340px;
     top: -293px;
   }
 
@@ -529,6 +546,10 @@
     transform: translateX(-100%);
   }
 
+  .item-one picture::after {
+    right: -340px;
+  }
+
   .footer-info {
     padding: 0 168px;
   }
@@ -549,6 +570,11 @@
 
   .item-three .images picture::after {
     right: -110px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .item-one picture::after {
+    right: -855px;
   }
 }
 /* =========== End Media Query for Desktop =========== */

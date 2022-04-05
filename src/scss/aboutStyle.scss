@@ -58,7 +58,7 @@
 .values-container h3 {
   font-size: 2rem;
   color: $darknavy;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -102,7 +102,7 @@
   font-size: 1.5rem;
   font-family: $spacemono;
   color: $darknavy;
-  padding: 1.75rem 0;
+  padding: 1rem 0 1.75rem;
   color: $darknavy;
 }
 
@@ -114,7 +114,7 @@
 }
 
 .value:last-child {
-  margin-bottom: 10rem;
+  margin-bottom: 9rem;
 }
 /* =========== End Our Value Section =========== */
 
@@ -125,7 +125,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 
   h5 {
     font-family: $spacemono;
@@ -155,6 +155,10 @@
   margin-bottom: 1rem;
 }
 
+.faqs-desc.active {
+  background-color: $lightyellow;
+}
+
 .faq-1,
 .faq-2 {
   width: 100%;
@@ -164,9 +168,9 @@
   font-family: $spacemono;
   color: $darknavy;
   margin-bottom: 2rem;
-  font-size: 2.5rem;
-  line-height: 3rem;
-  letter-spacing: -1.79px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  letter-spacing: -1.07px;
 }
 
 .arrow-down {
@@ -188,10 +192,10 @@
   font-family: $spacemono;
   font-weight: 700;
   text-align: left;
-  padding: 1.2rem 0;
-  font-size: 1.5rem;
-  line-height: 28px;
-  letter-spacing: -1.07px;
+  padding: 1.2rem 0 1rem 0;
+  font-size: 1.125rem;
+  line-height: 25px;
+  letter-spacing: -0.8px;
 }
 
 .faqs-text p {
@@ -268,14 +272,17 @@
 
   .values-container h3 {
     font-size: 3rem;
+    margin-bottom: 6rem;
   }
 
   .value-text h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    line-height: 28px;
+    letter-spacing: -1.07px;
   }
 
   .value-text p {
-    width: 490px;
+    width: 457px;
   }
 
   .circle-about {
@@ -306,6 +313,28 @@
   .item-one picture::after {
     top: -30px;
   }
+
+  .value:last-child {
+    margin-bottom: 7.5rem;
+  }
+
+  .faqs-container h5 {
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -2.14px;
+  }
+
+  .faqs-heading h6 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    letter-spacing: -1.79px;
+  }
+
+  .faqs-icon span {
+    font-size: 1.5rem;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+  }
 }
 /* =========== End Media Query for Tablet =========== */
 
@@ -327,6 +356,10 @@
 
   #hero-desc-about {
     left: 12.5%;
+
+    @media (min-width: 1024px) {
+      left: 187px;
+    }
   }
 
   .item-one .facility-text {

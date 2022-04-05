@@ -3,7 +3,6 @@
   z-index: 1000;
   width: 100vw;
   height: auto;
-  overflow: hidden;
 }
 
 #header .logo {
@@ -28,17 +27,18 @@
 
 #header .nav-list .nav-item {
   position: absolute;
-  background-color: $darknavy;
+  background-color: $dark;
   height: 100vh;
-  left: 100%;
+  left: 250%;
   top: 46px;
   margin-top: 1.1rem;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   z-index: 1;
-  transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1) left;
+  transition: 0.3s cubic-bezier(0.25, 1, 0.5, 1) right;
   padding: 3rem 2rem;
+  gap: 24px;
 }
 
 #header .nav-list {
@@ -46,15 +46,16 @@
 }
 
 #header .nav-list .nav-item li a {
-  color: $dimgrey;
+  color: $snow;
   text-transform: capitalize;
   font-family: $spacemono;
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   line-height: 25px;
+  font-weight: bold;
 }
 
 #header .nav-list .nav-item .btn {
-  margin-top: 52vh;
+  margin-top: 55vh;
 }
 
 #header .nav-list ul.active {

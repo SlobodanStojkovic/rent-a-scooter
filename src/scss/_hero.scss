@@ -34,7 +34,7 @@
   flex-direction: column;
   padding: 0rem 1.5rem;
   position: absolute;
-  padding: 7.2rem 2rem 0;
+  padding: 8.5rem 2rem 0;
   top: 20%;
 }
 
@@ -48,8 +48,9 @@
 .hero-desc p {
   text-align: center;
   color: $lightgrey;
-  padding: 1.5rem 0 2.2rem;
+  padding: 1.5rem 0 2rem;
   font-family: $lexenddeca;
+  font-size: 0.95rem;
 }
 
 .hero-desc a {

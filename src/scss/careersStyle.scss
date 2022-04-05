@@ -87,7 +87,7 @@
 
 /* =========== Start Why Join us Section =========== */
 .values-container {
-  padding-bottom: 4rem;
+  padding-bottom: 9.06rem;
 }
 
 .values-container h3 {
@@ -117,7 +117,7 @@
 }
 
 .value-text h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: $spacemono;
   color: $darknavy;
   line-height: 28px;
@@ -185,6 +185,7 @@
   }
 
   #careers-main .facility-text {
+    padding: 7.5rem 0;
     h2 {
       font-size: 3rem;
       line-height: 3rem;
@@ -229,7 +230,15 @@
   }
 
   .general-desc h5 {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+  }
+
+  .general-desc span {
+    font-family: $lexenddeca;
+    font-size: 0.95rem;
+    line-height: 25px;
   }
 
   .values-container h3 {
@@ -334,6 +343,10 @@
         }
       }
     }
+  }
+
+  .hero-desc {
+    left: 187px;
   }
 }
 /* =========== End Media Query for Desktop =========== */

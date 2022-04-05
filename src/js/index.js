@@ -15,19 +15,14 @@ menu_item.forEach((item) => {
   });
 });
 
-menu_item.forEach((item) => {
-  item.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    mobile_menu.classList.toggle("active");
-  });
-});
-
+let faqsDesc = document.querySelectorAll(".faqs-desc");
 let faqsRow = document.querySelectorAll(".faqs-icon");
 let arrow = document.querySelectorAll(".arrow-down");
 
 for (let i = 0; i < faqsRow.length; i++) {
   faqsRow[i].addEventListener("click", () => {
     let focusFaqs = faqsRow[i];
+    faqsDesc[i].classList.toggle("active");
     focusFaqs.classList.toggle("active");
     arrow[i].classList.toggle("arrow-active");
 
