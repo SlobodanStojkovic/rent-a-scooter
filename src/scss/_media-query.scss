@@ -609,9 +609,10 @@
     right: -110px;
   }
 }
-@media only screen and (min-width: 1920px) {
+
+@media only screen and (min-width: 2560px) {
   .item-one picture::after {
-    right: -855px;
+    right: -930px;
   }
 }
 /* =========== End Media Query for Desktop =========== */
